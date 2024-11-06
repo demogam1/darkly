@@ -1,0 +1,77 @@
+#   Sensible file
+```
+linux@linux-Virtual-Machine:~$ dirb http://172.26.91.121
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Wed Nov  6 20:54:42 2024
+URL_BASE: http://172.26.91.121/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://172.26.91.121/ ----
+==> DIRECTORY: http://172.26.91.121/admin/                                                                                                                                                                 
+==> DIRECTORY: http://172.26.91.121/audio/                                                                                                                                                                 
+==> DIRECTORY: http://172.26.91.121/css/                                                                                                                                                                   
+==> DIRECTORY: http://172.26.91.121/errors/                                                                                                                                                                
++ http://172.26.91.121/favicon.ico (CODE:200|SIZE:1406)                                                                                                                                                    
+==> DIRECTORY: http://172.26.91.121/fonts/                                                                                                                                                                 
+==> DIRECTORY: http://172.26.91.121/images/                                                                                                                                                                
+==> DIRECTORY: http://172.26.91.121/includes/                                                                                                                                                              
++ http://172.26.91.121/index.php (CODE:200|SIZE:6892)                                                                                                                                                      
+==> DIRECTORY: http://172.26.91.121/js/                                                                                                                                                                    
++ http://172.26.91.121/robots.txt (CODE:200|SIZE:53)                                                                                                                                                       
+==> DIRECTORY: http://172.26.91.121/whatever/                                                                                                                                                              
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/admin/ ----
+==> DIRECTORY: http://172.26.91.121/admin/css/                                                                                                                                                             
+==> DIRECTORY: http://172.26.91.121/admin/fonts/                                                                                                                                                           
++ http://172.26.91.121/admin/index.php (CODE:200|SIZE:1432)                                                                                                                                                
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/audio/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/css/ ----
+==> DIRECTORY: http://172.26.91.121/css/images/                                                                                                                                                            
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/errors/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/fonts/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/images/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/includes/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/js/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/whatever/ ----
++ http://172.26.91.121/whatever/htpasswd (CODE:200|SIZE:38)                                                                                                                                                
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/admin/css/ ----
+==> DIRECTORY: http://172.26.91.121/admin/css/images/                                                                                                                                                      
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/admin/fonts/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/css/images/ ----
+                                                                                                                                                                                                           
+---- Entering directory: http://172.26.91.121/admin/css/images/ ----
+                                                                                                                                                                                                           
+-----------------
+END_TIME: Wed Nov  6 20:55:06 2024
+DOWNLOADED: 64568 - FOUND: 5
+```
+
+While exploring with dirb, several URLs were found, including:
+
+==> DIRECTORY: http://172.26.91.121/whatever/
+Upon visiting this directory, there was an .htpasswd file containing HTTP credentials. After decrypting the MD5 password on the site md5online.org, we found the credentials to be:
+
+Username: root
+Password: qwerty123@
+
+We can use these credentials to connect to the URL http://172.26.91.121/admin, which provides us with the flag!
