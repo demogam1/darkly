@@ -1,0 +1,7 @@
+On page http://172.28.21.17/index.php?page=upload# we can upload a file.
+
+We noticed that image in jpg, jpeg and png were present in the site.
+
+We can imagine that we could upload another type of file in order to do intrude some command with file injection.
+
+so we upload our file, and with Burp Suite, changed the "Content-Type: " to "image/jpeg". And we get the flag.
