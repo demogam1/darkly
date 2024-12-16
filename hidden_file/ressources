@@ -1,0 +1,8 @@
+Plutot, nous avions trouver le fichier robots.txt grace a Dirb.
+En l'explorant, il contenait whatever et .hidden.
+.hidden contient plusieurs dossiers contenant plusieurs sous dossiers contenant un README. En tout, plusieurs milliers de readme etait a explorer.
+Un scrapper en python s'est charger de nous trouver le flag :
+linux@linux-Virtual-Machine:~/Desktop/darkly/hidden_file$ python3 script.py
+Recherche des fichiers README contenant des lettres et des chiffres...
+[+] Contenu trouvé avec lettres et chiffres : http://172.28.248.127/.hidden/whtccjokayshttvxycsvykxcfm/igeemtxnvexvxezqwntmzjltkt/lmpanswobhwcozdqixbowvbrhw/README
+Hey, here is your flag : d5eec3ec36cf80dce44a896f961c1831a05526ec215693c8f2c39543497d4466
