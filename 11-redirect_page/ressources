@@ -1,0 +1,6 @@
+Les icones facebook, instagram et youtube sont afficher via des div comme
+
+href="index.php?page=redirect&site=instagram"
+
+
+en modifiant le champs site par nimporte quel site, on obtient un flag
