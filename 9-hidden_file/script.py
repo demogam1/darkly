@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import re
 # URL racine
-BASE_URL = "http://172.28.248.127/.hidden/"
+BASE_URL = "http://172.20.131.213/.hidden/"
 # Expression régulière pour vérifier si le contenu contient à la fois des lettres et des chiffres
 PATTERN = re.compile(r'[A-Za-z].*\d|\d.*[A-Za-z]')
 # Fonction pour explorer et filtrer les fichiers README
