@@ -1,2 +1,0 @@
-using burp suit we click on password recovery button and intercept post request, 
-in this requestion we change the destination mail by our mail and we got the flag.
