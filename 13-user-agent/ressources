@@ -1,0 +1,23 @@
+apres avoir checker avec inspect element la page nous avons la balise suivant dans le code html : 
+<a href="?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"><li>© BornToSec</li></a>
+apres avoir acceder a cette page nous avons une page avec un texte et une musique , nous reverifion le html avec inspect element 
+et nous avons beaucoup de commentaire seul deux retiens notre attention : 
+
+<!--
+You must come from : "https://www.nsa.gov/".
+-->
+
+<!--
+Let's use this browser : "ft_bornToSec". It will help you a lot.
+-->
+
+nous testons ft_bornToSec en tant que user agent pour voir ce que ca nous retourne
+
+curl \
+-A "ft_bornToSec" \
+-e "https://www.nsa.gov/" \
+http://10.11.200.193/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
+
+dans le code html retourner nous avons la ligne suivante qui nous donne le flag 
+
+<h2 style="margin-top:50px;"> The flag is : f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188</h2>

@@ -1,0 +1,4 @@
+# Cookie exploit
+
+A cookie is available and has as a value "false" encrypted in md5 , we just encrypted true in md5 and replace the value of this cookie by the new one : b326b5062b2f0e69046810717534cb09  
+then refreshed the page and this flag was display as a js alert.
