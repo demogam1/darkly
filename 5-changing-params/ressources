@@ -1,2 +1,4 @@
+# Changing body parameters
+
 Using Burp Suite, we were able to edit the "value" and "subject" parameters of the body request of http://172.20.113.92/?page=survey#
 By changing the "value" to a number > 10 , we get the flag.

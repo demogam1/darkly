@@ -1,2 +1,7 @@
-on the feedback page we have page where we can post comments we tried to check for cross scripting vulnerabilities and we got the flag. 
+# Cross-scripting
+
+On the feedback page we have a section where we can post comments.
+
+We tried to check for cross scripting vulnerabilities and we got the flag.
+
 The payload is <script>al in name field and <script> in comments field.

@@ -1,6 +1,6 @@
-### SQL injection on member page
+# SQL injection on member page
 
-This injection prints all the columns of all tables (without the tables):
+This injection prints all the columns of all tables:
 
 `1=1 UNION SELECT NULL, column_name FROM information_schema.columns`
 

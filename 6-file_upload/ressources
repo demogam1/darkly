@@ -1,3 +1,5 @@
+# Changing content-type
+
 On page http://172.28.21.17/index.php?page=upload# we can upload a file.
 
 We noticed that image in jpg, jpeg and png were present in the site.

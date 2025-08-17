@@ -1,6 +1,8 @@
-Les icones facebook, instagram et youtube sont afficher via des div comme
+# Redirection link
+
+Social network icons are displayed into div like the following:
 
 href="index.php?page=redirect&site=instagram"
 
 
-en modifiant le champs site par nimporte quel site, on obtient un flag
+Just by editing the input website by any other website, we get the flag.
