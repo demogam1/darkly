@@ -1,7 +1,0 @@
-# Redirection link
-
-Social network icons are displayed into div like the following:
-
-href="index.php?page=redirect&site=instagram"
-
-Just by editing the input website by any other website, we get the flag.
